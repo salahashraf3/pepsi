@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+
+}
+body{
+    background-color: #0062be;
+}
+
+/* Nav */
+
+
+
+.main_container{
+    max-width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.logo img {
+    max-width: 8.5rem;
+}
+.nav .nav_list  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_list ul a{
+    margin-left: 3.5rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Noto Sans JP', sans-serif;
+    list-style: none;
+    font-size: 1.8rem;
+    transition: ease-in;
+    transition-duration: 250ms;
+}
+.nav_list ul a:first-child {
+    margin-left: 0;
+}
+
+/* End Nav */
+
+
+
+/* Section */
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+.section .left_text {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+    margin-top: 7rem;
+}
+.heading h1{
+    font-size: 7.5rem;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    letter-spacing: .5rem;
+
+}
+.heading span {
+    color: rgb(0, 174, 255);
+    font-weight: 100;
+}
+
+.paragraph h3{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 3rem;
+    line-height: 2.5rem;
+    letter-spacing: 1.2;
+    text-transform: capitalize;
+    font-family: 'Lexend Peta', sans-serif;
+}
+
+.btn {
+    background-color: #ffffff;
+    padding: .6rem 1rem; 
+    border-radius: 1.5rem;
+    text-align: center;  
+    margin-top: 3rem;
+    cursor: pointer; 
+    transition: ease-in;
+    transition-duration: 250ms;
+}
+.btn a {
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:black;
+}
+
+.section .right_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12rem;
+}
+.right_image img {
+    max-width: 25rem;
+    transition: ease-in;
+    transition-duration: 250ms;
+}
+
+
+
+
+/* End Section */
+
+/* Footer */
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer img {
+    max-width: 3.5rem;
+    margin-left: 2rem;
+    transition: ease-in;
+    transition-duration: 150ms;
+}
+
+/* End Footer */
+
+/* Hover Effects */
+
+.nav_list ul a:hover {
+    transform: scale(1.1);
+}
+
+.btn:hover{
+    background-color: rgb(0, 110, 255);
+}
+
+.right_image img:hover {
+    transform: scale(1.1);
+}
+
+.footer img:hover {
+    transform: translateY(-15px);
+}
+/* End Hover Effects */
+
+
+/* Media Queries */
+@media (max-width : 970px ) {
+    .main_container {
+        max-width: 95%;
+        margin: 2rem auto;
+        max-height: 100vh;
+    }
+    .logo img {
+        max-width: 7rem;    
+    }
+    .nav_list ul a{
+        font-size: 1.3rem;
+    }
+    .heading h1 {
+        font-size: 6.5rem;
+        letter-spacing: .3rem;
+    }
+    .paragraph h3{
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    .right_image img {
+        max-width: 17rem;
+    }
+
+}
+
+@media (max-width : 710px) {
+    .main_container {
+        max-width: 90%;
+        margin: auto;
+    }
+    .nav .nav_list {
+        display: none;
+    }
+    .nav .logo img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width : 550px ) {
+    .section {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 0;
+
+    }
+    .nav .logo {
+        padding: 2rem;
+        margin: 0;
+        margin-left: 12.8rem;
+        margin-bottom: 2rem;
+    }
+    .section .left_text {
+        margin-top: 0;
+        margin-bottom: 4rem;
+    }
+    .section .left_text h1 {
+        margin-left: 2rem;
+    }
+    .section .left_text .paragraph {
+        margin-left: 2rem;
+    }
+    .btn {
+        margin-left: 10rem;
+    }
+    .section .right_image {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    .section .right_image img {
+        max-width: 13rem;
+    }
+    .footer ul {
+        margin-right: 1.7rem;
+    }
+}
